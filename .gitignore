@@ -1,0 +1,6 @@
+# libraries, packages, and modules
+node_modules/
+
+# environment
+.env
+.claude
