@@ -50,3 +50,20 @@ function announce(name, callback){
 function sayBye(){
   console.log("Goodbye!")
 }
+const resultAdd = add(3, 4);
+const resultSubtract = sum(10, 4);
+const resultMultiply = multiply(3, 5);
+const resultDouble = double(6);
+const resultDivide = divide(20, 4);
+const greetDefault = greet();
+const greetNara = greet("Nara");
+const announcement = announce("Alice", sayBye);
+
+console.log("resultAdd:", resultAdd);
+console.log("resultSubtract:", resultSubtract);
+console.log("resultMultiply:", resultMultiply);
+console.log("resultDouble:", resultDouble);
+console.log("resultDivide:", resultDivide);
+console.log("greetDefault:", greetDefault);
+console.log("greetNara:", greetNara);
+console.log("announcement:", announcement);

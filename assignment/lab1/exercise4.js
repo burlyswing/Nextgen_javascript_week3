@@ -27,3 +27,27 @@
    ================================================================ */
 
 // Write your code below.
+let student = new Object();
+student.name = "Sokha";
+student.age = 20;
+student.major = "Computer Science";
+student["favorite subject"] = "Math";
+student.age = 21;
+student.temp = "anything";
+delete student.temp;
+hasMajor = "major" in student;
+hasTemp = "temp" in student;
+let studentInfo = "";
+for (let key in student ) {
+   if(i > 0){
+      studentInfo += ", " + key + ": " + student[key];
+   }else{
+      studentInfo += "" + key + ": " + student[key];
+   }
+   i++;
+}
+console.log("major:", student.major);
+console.log("favorite subject:", student["favorite subject"]);
+console.log("hasMajor:", hasMajor);
+console.log("hasTemp:", hasTemp);
+console.log("studentInfo:", studentInfo);

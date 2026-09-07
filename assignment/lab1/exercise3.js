@@ -29,5 +29,25 @@
 
    RUN:  node assignment/lab1/exercise3.js
    ================================================================ */
-
-// Write your code below.
+   let fruits = ["apple", "banana"];
+fruits.push("cherry");
+fruits.push("date");
+fruits.unshift("avocado");
+let poppedFruit = fruits.pop();
+let shiftedFruit = fruits.shift();
+let upperFruits = fruits.map(fruit => fruit.toUpperCase());
+let longFruits = fruits.filter(fruit => fruit.length > 5);
+let fruitList = "";
+fruits.forEach((fruit, index, array) => {
+    if (index < array.length - 1) {
+      fruitList += fruit + ", ";
+   }else {
+      fruitList += fruit;
+   }
+});
+console.log("fruits:", fruits);
+console.log("poppedFruit:", poppedFruit);
+console.log("shiftedFruit:", shiftedFruit);
+console.log("upperFruits:", upperFruits);
+console.log("longFruits:", longFruits);
+console.log("fruitList:", fruitList);
